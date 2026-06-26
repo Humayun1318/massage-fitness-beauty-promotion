@@ -1,6 +1,7 @@
 import { ArrowRight, Shield, Award, Flower2, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import heroImage from "@/assets/images/hero.png"
 
 const features = [
   {
@@ -57,7 +58,7 @@ export default function Hero() {
             className="mb-8 sm:mb-10 lg:mb-12 flex justify-center"
           >
             <img
-              src="src/assets/images/hero.png"
+              src={heroImage}
               alt="Purls Wellness"
               className="
                 w-full
