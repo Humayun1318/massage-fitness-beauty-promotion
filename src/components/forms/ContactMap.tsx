@@ -17,9 +17,7 @@ export default function ContactMap() {
       />
 
       <Marker position={[-33.8688, 151.2093]}>
-        <Popup>
-          Purls Mobile Massage
-        </Popup>
+        <Popup>Purls Mobile Massage</Popup>
       </Marker>
     </MapContainer>
   );

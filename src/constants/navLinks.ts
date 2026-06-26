@@ -1,5 +1,3 @@
-
-
 // export const navLinks = [
 //   { label: 'Home', path: '/', active: true },
 //   { label: 'Massage', path: '/services' },
@@ -9,7 +7,6 @@
 //   { label: 'Qualifications', path: '/qualifications' },
 //   { label: 'References', path: '/references' },
 // ];
-
 
 export const navLinks = [
   { label: 'Home', path: '/' },

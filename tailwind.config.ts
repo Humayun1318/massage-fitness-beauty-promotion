@@ -16,7 +16,7 @@ const config: Config = {
           600: '#2563eb',
           700: '#1d4ed8',
           800: '#1e40af',
-          900: '#1e3a8a'
+          900: '#1e3a8a',
         },
         accent: {
           50: '#ecfeff',
@@ -28,7 +28,7 @@ const config: Config = {
           600: '#0891b2',
           700: '#0e7490',
           800: '#155e75',
-          900: '#164e63'
+          900: '#164e63',
         },
         surface: {
           50: '#f8fbff',
@@ -40,7 +40,7 @@ const config: Config = {
           600: '#475569',
           700: '#334155',
           800: '#1e293b',
-          900: '#0f172a'
+          900: '#0f172a',
         },
         night: {
           50: '#0b1221',
@@ -52,17 +52,17 @@ const config: Config = {
           600: '#2d3a62',
           700: '#34436f',
           800: '#3f4a7c',
-          900: '#4c5788'
-        }
+          900: '#4c5788',
+        },
       },
       boxShadow: {
         soft: '0 24px 80px rgba(15, 23, 42, 0.08)',
         glow: '0 0 48px rgba(34, 211, 238, 0.16)',
-        elevated: '0 32px 110px rgba(15, 23, 42, 0.14)'
-      }
-    }
+        elevated: '0 32px 110px rgba(15, 23, 42, 0.14)',
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;

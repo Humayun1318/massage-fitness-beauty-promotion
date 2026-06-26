@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <Services/>
-      <OurProcess/>
-      <WhyChooseUs/>
-      <FeaturedTreatments/>
+      <Services />
+      <OurProcess />
+      <WhyChooseUs />
+      <FeaturedTreatments />
       {/* <About />
       <Services />
       <Memberships />

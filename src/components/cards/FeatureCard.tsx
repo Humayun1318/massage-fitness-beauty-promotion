@@ -9,7 +9,13 @@ interface FeatureCardProps {
   className?: string;
 }
 
-export function FeatureCard({ icon, title, description, index = 0, className = '' }: FeatureCardProps) {
+export function FeatureCard({
+  icon,
+  title,
+  description,
+  index = 0,
+  className = '',
+}: FeatureCardProps) {
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i: number) => ({
@@ -18,16 +24,16 @@ export function FeatureCard({ icon, title, description, index = 0, className = '
       transition: {
         delay: i * 0.1,
         duration: 0.5,
-        ease: "easeOut"
-      }
+        ease: 'easeOut',
+      },
     }),
     hover: {
       y: -6,
       transition: {
         duration: 0.3,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   return (
@@ -42,9 +48,7 @@ export function FeatureCard({ icon, title, description, index = 0, className = '
       {/* Icon */}
       <div className="mb-4">
         <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-500/20 dark:from-cyan-400/10 dark:to-blue-500/10 group-hover:from-cyan-400/30 group-hover:to-blue-500/30 transition-all duration-300">
-          <div className="text-cyan-600 dark:text-cyan-400 w-6 h-6">
-            {icon}
-          </div>
+          <div className="text-cyan-600 dark:text-cyan-400 w-6 h-6">{icon}</div>
         </div>
       </div>
 
@@ -54,9 +58,7 @@ export function FeatureCard({ icon, title, description, index = 0, className = '
       </h3>
 
       {/* Description */}
-      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-        {description}
-      </p>
+      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{description}</p>
     </motion.div>
   );
 }

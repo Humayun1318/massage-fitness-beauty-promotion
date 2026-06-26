@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
-import {
-  GraduationCap, ShieldCheck, MapPin, Calendar, Briefcase, Heart,
-} from 'lucide-react';
+import { GraduationCap, ShieldCheck, MapPin, Calendar, Briefcase, Heart } from 'lucide-react';
 // import { SectionHeader } from '@/components/ui/SectionHeader';
 import { WHY_CARDS } from '@/data/home.data';
 import { SectionHeader } from '@/components/shared/SectionHeader';
@@ -14,7 +12,7 @@ const container = {
 };
 const item = {
   hidden: { opacity: 0, y: 32 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 /* ══════════════════════════════════════════════════════════════ */
@@ -73,11 +71,7 @@ export default function WhyChooseUs() {
                   className="mb-5 flex items-center justify-center w-12 h-12 rounded-2xl"
                   style={{ background: 'var(--accent-soft)' }}
                 >
-                  <Icon
-                    size={22}
-                    style={{ color: 'var(--accent)' }}
-                    strokeWidth={1.7}
-                  />
+                  <Icon size={22} style={{ color: 'var(--accent)' }} strokeWidth={1.7} />
                 </div>
 
                 <h3 className="font-bold text-[15px] mb-2.5" style={{ color: 'var(--text)' }}>

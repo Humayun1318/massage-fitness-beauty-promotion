@@ -78,9 +78,7 @@ export function CertificateLightbox({ isOpen, image, title, onClose }: Certifica
 
             {/* Certificate Title */}
             <div className="p-4 text-center bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-700">
-              <p className="text-gray-800 dark:text-gray-200 font-medium">
-                {title}
-              </p>
+              <p className="text-gray-800 dark:text-gray-200 font-medium">{title}</p>
             </div>
           </motion.div>
         </motion.div>

@@ -25,7 +25,9 @@ export default function OurProcess() {
           <div
             aria-hidden
             className="hidden lg:block absolute top-[52px] left-[calc(12.5%+32px)] right-[calc(12.5%+32px)] h-[1px]"
-            style={{ background: 'linear-gradient(90deg,rgba(34,211,238,0.4),rgba(59,130,246,0.4))' }}
+            style={{
+              background: 'linear-gradient(90deg,rgba(34,211,238,0.4),rgba(59,130,246,0.4))',
+            }}
           />
 
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -64,7 +66,10 @@ export default function OurProcess() {
                   <h3 className="font-bold text-[15px] mb-2.5" style={{ color: 'var(--text)' }}>
                     {s.title}
                   </h3>
-                  <p className="text-[13.5px] leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+                  <p
+                    className="text-[13.5px] leading-relaxed"
+                    style={{ color: 'var(--text-muted)' }}
+                  >
                     {s.description}
                   </p>
                 </div>

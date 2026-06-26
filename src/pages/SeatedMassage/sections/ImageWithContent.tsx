@@ -20,10 +20,10 @@ export function ImageWithContent({
   children,
   imagePosition = 'left',
   className = '',
-  index = 0
+  index = 0,
 }: ImageWithContentProps) {
   const isLeft = imagePosition === 'left';
-  
+
   const containerVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i: number) => ({
@@ -32,9 +32,9 @@ export function ImageWithContent({
       transition: {
         delay: i * 0.1,
         duration: 0.5,
-        ease: "easeOut"
-      }
-    })
+        ease: 'easeOut',
+      },
+    }),
   };
 
   const imageVariants: Variants = {
@@ -45,16 +45,16 @@ export function ImageWithContent({
       transition: {
         delay: 0.2,
         duration: 0.5,
-        ease: "easeOut"
-      }
+        ease: 'easeOut',
+      },
     },
     hover: {
       scale: 1.03,
       transition: {
         duration: 0.4,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const contentVariants: Variants = {
@@ -65,9 +65,9 @@ export function ImageWithContent({
       transition: {
         delay: 0.3,
         duration: 0.5,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   return (
@@ -80,7 +80,7 @@ export function ImageWithContent({
     >
       <div className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
         {/* Image Section */}
-        <motion.div 
+        <motion.div
           className="relative w-full md:w-1/2 h-64 md:h-auto min-h-[300px] overflow-hidden bg-gray-100 dark:bg-slate-700"
           variants={imageVariants}
           whileHover="hover"
@@ -98,7 +98,7 @@ export function ImageWithContent({
         </motion.div>
 
         {/* Content Section */}
-        <motion.div 
+        <motion.div
           variants={contentVariants}
           className="w-full md:w-1/2 p-6 sm:p-8 lg:p-10 flex flex-col justify-center"
         >

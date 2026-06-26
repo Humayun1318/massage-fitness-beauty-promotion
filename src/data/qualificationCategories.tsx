@@ -1,12 +1,4 @@
-import { 
-  Award,
-  Heart,
-  Activity,
-  Sparkles,
-  Shield,
-  GraduationCap,
-  ZoomIn
-} from 'lucide-react';
+import { Award, Heart, Activity, Sparkles, Shield, GraduationCap, ZoomIn } from 'lucide-react';
 // Import certificate images - you'll need to add these images
 import massageCert1 from '@/assets/images/hero.png';
 import massageCert2 from '@/assets/images/hero.png';
@@ -34,7 +26,6 @@ import firstAidCert5 from '@/assets/images/hero.png';
 import firstAidCert6 from '@/assets/images/hero.png';
 import firstAidCert7 from '@/assets/images/hero.png';
 
-
 // Certificate data with images
 export const qualificationCategories = [
   {
@@ -45,8 +36,8 @@ export const qualificationCategories = [
       { name: 'Diploma of Indian Head Massage Certificate', image: massageCert1 },
       { name: 'Four Massage Therapy', image: massageCert2 },
       { name: 'Diploma of Remedial Massage', image: massageCert3 },
-      { name: 'Diploma of Clinical Aromatherapy', image: massageCert4 }
-    ]
+      { name: 'Diploma of Clinical Aromatherapy', image: massageCert4 },
+    ],
   },
   {
     id: 'fitness',
@@ -57,8 +48,8 @@ export const qualificationCategories = [
       { name: 'Instructing Spin Instructor', image: fitnessCert2 },
       { name: 'Power Plates Instructor', image: fitnessCert3 },
       { name: 'Certificate Three in Fitness', image: fitnessCert4 },
-      { name: 'Certificate Four Personal Trainer', image: fitnessCert5 }
-    ]
+      { name: 'Certificate Four Personal Trainer', image: fitnessCert5 },
+    ],
   },
   {
     id: 'beauty',
@@ -70,8 +61,8 @@ export const qualificationCategories = [
       { name: 'Manicure & SPA manicure', image: beautyCert3 },
       { name: 'Pedicure & SPA pedicure', image: beautyCert4 },
       { name: 'Lash & brow treatment', image: beautyCert5 },
-      { name: 'Make-up application', image: beautyCert6 }
-    ]
+      { name: 'Make-up application', image: beautyCert6 },
+    ],
   },
   {
     id: 'first-aid',
@@ -84,7 +75,7 @@ export const qualificationCategories = [
       { name: 'First aid certificate 2018', image: firstAidCert4 },
       { name: 'First Aid Certificate 2020', image: firstAidCert5 },
       { name: 'First aid certificate 2021', image: firstAidCert6 },
-      { name: 'Mable infection control certificate 2023', image: firstAidCert7 }
-    ]
-  }
+      { name: 'Mable infection control certificate 2023', image: firstAidCert7 },
+    ],
+  },
 ];

@@ -12,7 +12,7 @@ import {
   Leaf,
 } from 'lucide-react';
 
-// Import images 
+// Import images
 import remedialImage from '@/assets/images/remedial-massage.png';
 import deepTissueImage from '@/assets/images/deep-tissue.png';
 import sportsImage from '@/assets/images/sports-massage.png';

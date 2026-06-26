@@ -1,9 +1,6 @@
-
 // import { Link } from 'react-router-dom';
 // import { ThemeToggle } from '../shared/ThemeToggle';
 // import { navLinks } from '@/constants/navLinks';
-
-
 
 // /* ═══════════════════════════ NAVBAR ════════════════════════════════════ */
 // export function Navbar() {
@@ -101,7 +98,7 @@
 //             {/* Desktop Navigation Links */}
 //             <ul className="hidden xl:flex items-center gap-1 text-sm font-medium">
 //               {navLinks.map((link) => {
-//                 const isActive = location.pathname === link.path || 
+//                 const isActive = location.pathname === link.path ||
 //                   (link.path.includes('#') && location.pathname === '/services' && link.path.includes('#'));
 //                 return (
 //                   <li key={link.label}>
@@ -198,8 +195,8 @@
 //       <div
 //         className={`
 //           w-full transition-all duration-300
-//           ${isScrolled 
-//             ? 'fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-xl shadow-2xl border-b border-white/5' 
+//           ${isScrolled
+//             ? 'fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-xl shadow-2xl border-b border-white/5'
 //             : 'relative z-40 bg-transparent'
 //           }
 //         `}
@@ -220,7 +217,7 @@
 //           {/* Desktop Navigation Links */}
 //           <ul className="hidden xl:flex items-center gap-1 text-sm font-medium">
 //             {navLinks.map((link) => {
-//               const isActive = location.pathname === link.path || 
+//               const isActive = location.pathname === link.path ||
 //                 (link.path.includes('#') && location.pathname === '/services' && link.path.includes('#'));
 //               return (
 //                 <li key={link.label}>
@@ -317,9 +314,10 @@ export function Navbar() {
       <div
         className={`
           w-full transition-all duration-300 z-40
-          ${isScrolled 
-            ? 'fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl shadow-2xl border-b border-gray-200/50 dark:border-white/5' 
-            : 'relative bg-transparent'
+          ${
+            isScrolled
+              ? 'fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl shadow-2xl border-b border-gray-200/50 dark:border-white/5'
+              : 'relative bg-transparent'
           }
         `}
       >
@@ -341,8 +339,11 @@ export function Navbar() {
           {/* Desktop Navigation Links */}
           <ul className="hidden xl:flex items-center gap-1 text-sm font-medium">
             {navLinks.map((link) => {
-              const isActive = location.pathname === link.path || 
-                (link.path.includes('#') && location.pathname === '/services' && link.path.includes('#'));
+              const isActive =
+                location.pathname === link.path ||
+                (link.path.includes('#') &&
+                  location.pathname === '/services' &&
+                  link.path.includes('#'));
               return (
                 <li key={link.label}>
                   <Link
@@ -381,9 +382,10 @@ export function Navbar() {
               to="/contact"
               className={`
                 hidden sm:inline-flex items-center gap-2 px-5 py-2 rounded-full border text-sm font-medium transition-all duration-300 shrink-0
-                ${isScrolled 
-                  ? 'border-cyan-500/60 dark:border-cyan-400/60 text-cyan-600 dark:text-white hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-[0_0_12px_rgba(34,211,238,0.35)]' 
-                  : 'border-cyan-400/60 text-gray-900 dark:text-white hover:border-cyan-400 hover:shadow-[0_0_12px_rgba(34,211,238,0.35)]'
+                ${
+                  isScrolled
+                    ? 'border-cyan-500/60 dark:border-cyan-400/60 text-cyan-600 dark:text-white hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-[0_0_12px_rgba(34,211,238,0.35)]'
+                    : 'border-cyan-400/60 text-gray-900 dark:text-white hover:border-cyan-400 hover:shadow-[0_0_12px_rgba(34,211,238,0.35)]'
                 }
               `}
             >

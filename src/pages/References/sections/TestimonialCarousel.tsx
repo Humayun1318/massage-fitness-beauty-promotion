@@ -1,35 +1,7 @@
 import { testimonials } from '@/data/testimonials.data';
-import { 
-  ChevronLeft, 
-  ChevronRight, 
-  Star, 
-  Quote,
-  User,
-  Calendar,
-  Award
-} from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, Quote, User, Calendar, Award } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Testimonial Carousel Component
 export function TestimonialCarousel() {
@@ -53,7 +25,7 @@ export function TestimonialCarousel() {
   const current = testimonials[currentIndex];
 
   return (
-    <div 
+    <div
       className="relative bg-white dark:bg-slate-800 rounded-2xl border border-gray-200 dark:border-slate-700 p-6 sm:p-8 md:p-10 shadow-sm"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
@@ -69,12 +41,14 @@ export function TestimonialCarousel() {
           <Star
             key={i}
             size={18}
-            className={i < current.rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300 dark:text-gray-600'}
+            className={
+              i < current.rating
+                ? 'text-yellow-400 fill-yellow-400'
+                : 'text-gray-300 dark:text-gray-600'
+            }
           />
         ))}
-        <span className="ml-2 text-sm text-gray-500 dark:text-gray-400">
-          {current.rating}.0
-        </span>
+        <span className="ml-2 text-sm text-gray-500 dark:text-gray-400">{current.rating}.0</span>
       </div>
 
       {/* Testimonial Text */}

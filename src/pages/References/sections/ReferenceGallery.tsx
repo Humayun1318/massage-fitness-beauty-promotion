@@ -1,5 +1,3 @@
-
-
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import reference images - you'll need to add these images
@@ -14,7 +12,6 @@ import refImage8 from '@/assets/images/hero.png';
 import refImage9 from '@/assets/images/hero.png';
 import { testimonials } from '@/data/testimonials.data';
 
-
 // Reference images data
 export const referenceImages = [
   { id: 1, image: refImage1, title: 'Client Reference 1' },
@@ -25,7 +22,7 @@ export const referenceImages = [
   { id: 6, image: refImage6, title: 'Client Reference 6' },
   { id: 7, image: refImage7, title: 'Client Reference 7' },
   { id: 8, image: refImage8, title: 'Client Reference 8' },
-  { id: 9, image: refImage9, title: 'Client Reference 9' }
+  { id: 9, image: refImage9, title: 'Client Reference 9' },
 ];
 
 // Reference Image Gallery Component
@@ -50,9 +47,7 @@ export function ReferenceGallery() {
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-            <p className="p-3 text-white text-sm font-medium w-full text-center">
-              {item.title}
-            </p>
+            <p className="p-3 text-white text-sm font-medium w-full text-center">{item.title}</p>
           </div>
         </motion.div>
       ))}

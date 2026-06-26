@@ -3,7 +3,6 @@
 // import { motion, AnimatePresence } from 'framer-motion';
 // import { navLinks } from '@/constants/navLinks';
 
-
 // interface MobileMenuProps {
 //   isOpen: boolean;
 //   onClose: () => void;
@@ -125,7 +124,9 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           >
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200 dark:border-white/10">
-              <span className="text-gray-900 dark:text-white font-bold text-sm tracking-widest">MENU</span>
+              <span className="text-gray-900 dark:text-white font-bold text-sm tracking-widest">
+                MENU
+              </span>
               <button
                 onClick={onClose}
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"

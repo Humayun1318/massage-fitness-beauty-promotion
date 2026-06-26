@@ -1,4 +1,3 @@
-
 export const routePaths = {
   home: '/',
   services: '/services',

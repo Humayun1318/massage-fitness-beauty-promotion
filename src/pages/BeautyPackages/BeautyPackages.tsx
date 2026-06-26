@@ -247,8 +247,8 @@ export default function BeautyPackagesPage() {
           </div>
         </section>
 
-         {/* contact */}
-        <section className='mt-8'>
+        {/* contact */}
+        <section className="mt-8">
           <SectionHeader
             // pill="Spotlight"
             title="Need Help?"

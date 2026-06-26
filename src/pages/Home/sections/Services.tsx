@@ -11,7 +11,7 @@ const container = {
 };
 const card = {
   hidden: { opacity: 0, y: 40 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 /* ══════════════════════════════════════════════════════════════ */
@@ -59,7 +59,13 @@ export default function Services() {
 
 /* ── Individual card ────────────────────────────────────────── */
 function ServiceCard({
-  category, title, description, image, duration, badge, href,
+  category,
+  title,
+  description,
+  image,
+  duration,
+  badge,
+  href,
 }: (typeof SERVICES)[number]) {
   return (
     <Link
@@ -85,7 +91,8 @@ function ServiceCard({
         aria-hidden
         className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
         style={{
-          background: 'linear-gradient(135deg,rgba(34,211,238,0.18),rgba(59,130,246,0.12)) border-box',
+          background:
+            'linear-gradient(135deg,rgba(34,211,238,0.18),rgba(59,130,246,0.12)) border-box',
           border: '1px solid transparent',
           WebkitMask: 'linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)',
           WebkitMaskComposite: 'destination-out',
@@ -126,7 +133,10 @@ function ServiceCard({
         <h3 className="text-base font-bold mb-2" style={{ color: 'var(--text)' }}>
           {title}
         </h3>
-        <p className="text-[13.5px] leading-relaxed flex-1 mb-5" style={{ color: 'var(--text-muted)' }}>
+        <p
+          className="text-[13.5px] leading-relaxed flex-1 mb-5"
+          style={{ color: 'var(--text-muted)' }}
+        >
           {description}
         </p>
 
@@ -136,7 +146,10 @@ function ServiceCard({
           style={{ color: 'var(--accent)' }}
         >
           Learn More
-          <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
+          <ArrowRight
+            size={15}
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          />
         </span>
       </div>
     </Link>

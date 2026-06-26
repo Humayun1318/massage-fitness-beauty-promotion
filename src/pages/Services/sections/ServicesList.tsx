@@ -1,14 +1,15 @@
 import { fallbackImage, servicesData } from '@/data/services';
-import { motion, type Variants} from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
 interface ServicesListProps {
   category: string;
 }
 
 export function ServicesList({ category }: ServicesListProps) {
-  const filteredServices = category === 'All' 
-    ? servicesData 
-    : servicesData.filter(service => service.category === category);
+  const filteredServices =
+    category === 'All'
+      ? servicesData
+      : servicesData.filter((service) => service.category === category);
 
   // Card variants for framer-motion
   const cardVariants: Variants = {
@@ -19,16 +20,16 @@ export function ServicesList({ category }: ServicesListProps) {
       transition: {
         delay: i * 0.1,
         duration: 0.5,
-        ease: "easeOut"
-      }
+        ease: 'easeOut',
+      },
     }),
     hover: {
       y: -8,
       transition: {
         duration: 0.3,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const imageVariants: Variants = {
@@ -36,9 +37,9 @@ export function ServicesList({ category }: ServicesListProps) {
       scale: 1.05,
       transition: {
         duration: 0.4,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const iconVariants: Variants = {
@@ -47,9 +48,9 @@ export function ServicesList({ category }: ServicesListProps) {
       rotate: 5,
       transition: {
         duration: 0.3,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   return (
@@ -67,7 +68,7 @@ export function ServicesList({ category }: ServicesListProps) {
             className="group bg-white dark:bg-slate-800 rounded-2xl border border-gray-200 dark:border-slate-700 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-cyan-500/10 dark:hover:shadow-cyan-500/5 transition-shadow duration-300"
           >
             {/* Image Section */}
-            <motion.div 
+            <motion.div
               className="relative w-full h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden bg-gray-100 dark:bg-slate-700"
               variants={imageVariants}
             >
@@ -81,7 +82,7 @@ export function ServicesList({ category }: ServicesListProps) {
                   (e.target as HTMLImageElement).src = fallbackImage;
                 }}
               />
-              
+
               {/* Category Badge - Overlay on Image */}
               <div className="absolute top-4 right-4">
                 <span className="inline-block px-3 py-1 text-xs font-medium text-white bg-black/60 backdrop-blur-sm rounded-full border border-white/10">
@@ -97,14 +98,11 @@ export function ServicesList({ category }: ServicesListProps) {
             <div className="p-6">
               {/* Icon and Title */}
               <div className="flex items-start gap-3 mb-3">
-                <motion.div 
+                <motion.div
                   className="shrink-0 p-2 rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-500/20 dark:from-cyan-400/10 dark:to-blue-500/10"
                   variants={iconVariants}
                 >
-                  <Icon 
-                    size={24} 
-                    className="text-cyan-600 dark:text-cyan-400" 
-                  />
+                  <Icon size={24} className="text-cyan-600 dark:text-cyan-400" />
                 </motion.div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300 line-clamp-2">
                   {service.title}

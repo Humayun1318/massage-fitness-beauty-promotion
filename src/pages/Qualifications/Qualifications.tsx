@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import { GraduationCap } from 'lucide-react';
 
-
 import { CertificateCard } from './sections/CertificateCard';
 import { qualificationCategories } from '@/data/qualificationCategories';
-
 
 // Import hero image
 import heroImage from '@/assets/images/hero.png';

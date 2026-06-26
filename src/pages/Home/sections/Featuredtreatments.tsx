@@ -7,7 +7,11 @@ import { SectionHeader } from '@/components/shared/SectionHeader';
 
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 36 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] as const } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] as const },
+  },
 });
 
 /* ══════════════════════════════════════════════════════════════ */
@@ -75,10 +79,7 @@ export default function FeaturedTreatments() {
             <p className="text-base leading-relaxed mb-8" style={{ color: 'var(--text-muted)' }}>
               {featured.description}
             </p>
-            <Link
-              to={featured.href}
-              className="hero-button w-fit"
-            >
+            <Link to={featured.href} className="hero-button w-fit">
               Book This Treatment
               <ArrowRight size={16} className="ml-2" />
             </Link>
@@ -105,7 +106,14 @@ export default function FeaturedTreatments() {
 }
 
 /* ── Compact treatment card ─────────────────────────────────── */
-function TreatmentCard({ category, title, description, image, icon, href }: typeof TREATMENTS[number]) {
+function TreatmentCard({
+  category,
+  title,
+  description,
+  image,
+  icon,
+  href,
+}: (typeof TREATMENTS)[number]) {
   return (
     <Link
       to={href}
@@ -149,7 +157,10 @@ function TreatmentCard({ category, title, description, image, icon, href }: type
         <h4 className="font-bold text-[15px] mb-2" style={{ color: 'var(--text)' }}>
           {title}
         </h4>
-        <p className="text-[13px] leading-relaxed flex-1 mb-4" style={{ color: 'var(--text-muted)' }}>
+        <p
+          className="text-[13px] leading-relaxed flex-1 mb-4"
+          style={{ color: 'var(--text-muted)' }}
+        >
           {description}
         </p>
         <span

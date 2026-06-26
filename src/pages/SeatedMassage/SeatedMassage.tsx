@@ -269,7 +269,7 @@ export default function SeatedMassagePage() {
         </section>
 
         {/* contact */}
-        <section className='mt-8'>
+        <section className="mt-8">
           <SectionHeader
             // pill="Spotlight"
             title="Need Help?"
