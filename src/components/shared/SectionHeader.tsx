@@ -4,7 +4,7 @@ interface SectionHeaderProps {
   pill?: string;
   title: string;
   titleHighlight?: string;
-  subtitle: string;
+  subtitle?: string;
   center?: boolean;
 }
 

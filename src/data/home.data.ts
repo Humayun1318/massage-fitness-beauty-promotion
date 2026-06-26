@@ -13,7 +13,7 @@ export const SERVICES: Service[] = [
         image: 'https://i.ibb.co.com/fd1zGk1F/Untitled-design.png',
         duration: '60 – 90 min',
         badge: 'Most Popular',
-        href: '/massage',
+        href: '/services',
     },
     {
         id: 'seated',
