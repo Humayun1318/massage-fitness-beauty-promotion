@@ -35,7 +35,7 @@ export function CertificateCard({
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = '/src/assets/images/placeholder.jpg';
+                (e.target as HTMLImageElement).src = '/src/assets/images/placeholder.svg';
               }}
             />
 

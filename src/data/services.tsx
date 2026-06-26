@@ -27,7 +27,7 @@ import palliativeImage from '@/assets/images/palliative-care.png';
 import bereavementImage from '@/assets/images/bereavement-massage.png';
 
 // Fallback image if specific image is not available
-export const fallbackImage = '@/assets/images/services/placeholder.jpg';
+export const fallbackImage = '@/assets/images/placeholder.svg';
 
 export const servicesData = [
   {

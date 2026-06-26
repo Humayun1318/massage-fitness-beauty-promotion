@@ -25,7 +25,7 @@ export default function BeautyPackagesPage() {
               className="w-full h-full object-cover"
               loading="eager"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = '/src/assets/images/placeholder.jpg';
+                (e.target as HTMLImageElement).src = '/src/assets/images/placeholder.svg';
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
