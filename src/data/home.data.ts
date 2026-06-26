@@ -57,7 +57,7 @@ export const TREATMENTS: Treatment[] = [
             'Targets deep muscle layers to release chronic tension, improve posture, and restore range of motion. Ideal for athletes and desk workers.',
         image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=700&q=80',
         icon: '✦',
-        href: '/massage#deep-tissue',
+        href: '/services',
     },
     {
         id: 'hot-stone',
@@ -67,7 +67,7 @@ export const TREATMENTS: Treatment[] = [
             'Smooth heated basalt stones melt away tension while improving circulation and inducing a state of profound relaxation.',
         image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700&q=80',
         icon: '◆',
-        href: '/massage#hot-stone',
+        href: '/services',
     },
     {
         id: 'facials',
@@ -77,7 +77,7 @@ export const TREATMENTS: Treatment[] = [
             'Bespoke facial treatments using premium skincare ranges, tailored to your skin type and specific concerns.',
         image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=700&q=80',
         icon: '❋',
-        href: '/beauty-packages#facials',
+        href: '/beauty-packages',
     },
     {
         id: 'strength',
@@ -87,7 +87,7 @@ export const TREATMENTS: Treatment[] = [
             'Progressive overload programming designed around your equipment, space, and schedule. Measurable results guaranteed.',
         image: 'https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=700&q=80',
         icon: '⬡',
-        href: '/personal-training#strength',
+        href: '/personal-training',
     },
     {
         id: 'sports',
@@ -97,7 +97,7 @@ export const TREATMENTS: Treatment[] = [
             'Pre and post-event sports massage to maximise performance, reduce injury risk, and speed up muscle recovery.',
         image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=700&q=80',
         icon: '▲',
-        href: '/massage#sports',
+        href: '/services',
     },
 ];
 

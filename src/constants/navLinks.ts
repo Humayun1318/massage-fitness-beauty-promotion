@@ -16,7 +16,7 @@ export const navLinks = [
   { label: 'Massage', path: '/services' },
   { label: 'Seated Massage', path: '/seated-massage' },
   { label: 'Personal Training', path: '/personal-training' },
-  { label: 'Beauty Packages', path: '/services#beauty' },
+  { label: 'Beauty Packages', path: '/beauty-packages' },
   { label: 'Qualifications', path: '/qualifications' },
   { label: 'References', path: '/references' },
 ];

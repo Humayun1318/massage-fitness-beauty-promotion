@@ -11,9 +11,9 @@ const socialLinks = [
 const usefulLinks = [
   { label: 'Home', path: '/' },
   { label: 'Massage', path: '/services' },
-  { label: 'Seated Massage', path: '/services#seated' },
-  { label: 'Personal Training', path: '/services#training' },
-  { label: 'Beauty Packages', path: '/services#beauty' },
+  { label: 'Seated Massage', path: '/services' },
+  { label: 'Personal Training', path: '/personal-training' },
+  { label: 'Beauty Packages', path: '/beauty-packages' },
   { label: 'Qualifications', path: '/qualifications' },
   { label: 'References', path: '/references' },
   { label: 'Contact', path: '/contact' },
